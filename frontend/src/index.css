@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-ink-950 text-slate-200 font-sans antialiased;
+  background-image: theme("backgroundImage.grid-glow");
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+::selection {
+  background: rgba(20, 179, 137, 0.35);
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #1a2235;
+  border-radius: 999px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #252f45;
+  background-clip: padding-box;
+}
+
+h1, h2, h3, h4 {
+  @apply font-display tracking-tight;
+}
+
+@layer components {
+  .glass-panel {
+    @apply relative bg-ink-800/60 border border-white/[0.06] backdrop-blur-xl rounded-2xl shadow-panel;
+  }
+
+  .glass-panel::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background-image: theme("backgroundImage.card-sheen");
+    pointer-events: none;
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-300 via-primary-400 to-accent-400;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-primary-500 to-primary-600
+      text-ink-950 font-semibold px-4 py-2.5 shadow-glow transition-all duration-200
+      hover:brightness-110 hover:-translate-y-0.5 active:translate-y-0 disabled:opacity-50 disabled:pointer-events-none;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg bg-white/[0.04] border border-white/10
+      text-slate-200 font-medium px-4 py-2.5 transition-all duration-200
+      hover:bg-white/[0.08] hover:border-white/20 disabled:opacity-50 disabled:pointer-events-none;
+  }
+
+  .btn-danger {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg bg-signal-rose/10 border border-signal-rose/30
+      text-signal-rose font-medium px-3 py-2 transition-all duration-200 hover:bg-signal-rose/20;
+  }
+
+  .input-field {
+    @apply w-full px-3.5 py-2.5 bg-ink-900/70 border border-white/10 rounded-lg text-slate-100 placeholder-slate-500
+      focus:outline-none focus:ring-2 focus:ring-primary-500/50 focus:border-primary-500/50 transition-all duration-150;
+  }
+
+  .badge {
+    @apply inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium border;
+  }
+
+  .skeleton {
+    @apply relative overflow-hidden bg-ink-700/50 rounded-lg;
+    background-image: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.06), transparent);
+    background-size: 400px 100%;
+    background-repeat: no-repeat;
+    animation: shimmer 1.6s infinite linear;
+  }
+
+  .terminal {
+    @apply bg-[#060a10] border border-white/[0.06] rounded-xl font-mono text-[13px] leading-relaxed text-slate-300;
+  }
+}
