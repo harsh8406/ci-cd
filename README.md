@@ -5,7 +5,7 @@ hi hello
 
 | Version | Status | Trigger | Deployed At |
 | --- | --- | --- | --- |
-| v7 | success | manual | 2026-08-21T09:52:20.437Z |
+| v10 | success | manual | 2026-08-21T09:54:00.725Z |
 
 _Auto-updated by the Enterprise CI/CD Platform after a successful deployment._
 <!-- CICD-PLATFORM:DEPLOYMENTS:END -->
