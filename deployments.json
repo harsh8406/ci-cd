@@ -1,7 +1,13 @@
 {
   "application": "testing",
-  "updatedAt": "2026-08-21T10:20:38.546Z",
+  "updatedAt": "2026-08-21T10:23:32.468Z",
   "deployments": [
+    {
+      "version": 5,
+      "status": "failed",
+      "trigger": "manual",
+      "at": "2026-08-21T10:23:30.675Z"
+    },
     {
       "version": 4,
       "status": "success",
