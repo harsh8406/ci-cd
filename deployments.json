@@ -1,60 +1,12 @@
 {
-  "application": "testing",
-  "updatedAt": "2026-08-24T14:59:53.380Z",
+  "application": "payment",
+  "updatedAt": "2026-08-24T16:37:53.034Z",
   "deployments": [
     {
-      "version": 8,
-      "status": "success",
-      "trigger": "manual",
-      "at": "2026-08-24T14:59:51.262Z"
-    },
-    {
-      "version": 7,
-      "status": "success",
-      "trigger": "manual",
-      "at": "2026-08-24T14:59:24.864Z"
-    },
-    {
-      "version": 6,
-      "status": "success",
-      "trigger": "manual",
-      "at": "2026-08-21T10:25:42.428Z"
-    },
-    {
-      "version": 4,
-      "status": "success",
-      "trigger": "rollback",
-      "at": "2026-08-21T10:23:33.886Z"
-    },
-    {
-      "version": 5,
-      "status": "failed",
-      "trigger": "manual",
-      "at": "2026-08-21T10:23:30.675Z"
-    },
-    {
-      "version": 4,
-      "status": "success",
-      "trigger": "manual",
-      "at": "2026-08-21T10:20:36.834Z"
-    },
-    {
-      "version": 3,
-      "status": "success",
-      "trigger": "manual",
-      "at": "2026-08-21T10:20:31.170Z"
-    },
-    {
-      "version": 2,
-      "status": "success",
-      "trigger": "manual",
-      "at": "2026-08-21T10:08:06.234Z"
-    },
-    {
       "version": 1,
-      "status": "failed",
+      "status": "success",
       "trigger": "manual",
-      "at": "2026-08-21T10:08:03.571Z"
+      "at": "2026-08-24T16:37:50.422Z"
     }
   ]
 }
