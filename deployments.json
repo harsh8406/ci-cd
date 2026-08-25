@@ -1,12 +1,12 @@
 {
-  "application": "payment",
-  "updatedAt": "2026-08-24T16:37:53.034Z",
+  "application": "payment_service",
+  "updatedAt": "2026-08-25T02:42:31.037Z",
   "deployments": [
     {
       "version": 1,
       "status": "success",
       "trigger": "manual",
-      "at": "2026-08-24T16:37:50.422Z"
+      "at": "2026-08-25T02:42:28.398Z"
     }
   ]
 }
